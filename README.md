@@ -1,7 +1,7 @@
 # lmc-ai-env-website
-Starting instructions:
-Install npm for your operating system.
-Then run:
+Starting instructions:  
+Install npm for your operating system.  
 
-npm install
-npm start
+Then run:  
+`npm install`  
+`npm start`
