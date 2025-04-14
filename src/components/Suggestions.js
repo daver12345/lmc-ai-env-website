@@ -3,7 +3,7 @@ import React from 'react';
 
 function Suggestions() {
   return (
-    <section className="suggestions">
+    <section id="suggestions" className="suggestions">
       <h2>🌿 What You Can Do</h2>
       <ul>
         <li>🔌 Turn off AI features when not needed (like Smart Compose or AI Overview).</li>
