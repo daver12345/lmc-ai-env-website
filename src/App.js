@@ -15,6 +15,9 @@ function App() {
 
   return (
     <div className="App">
+      <button onClick={toggleSidebar}>
+        {sidebarVisible ? 'Hide Sidebar' : 'Show Sidebar'}
+      </button>
       <div className="container">
         {sidebarVisible && (
           <aside className="sidebar">
