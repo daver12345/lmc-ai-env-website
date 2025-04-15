@@ -37,7 +37,6 @@ function App() {
           <div className="side-by-side">
             {showSidebar && (
               <div className="card sidebar-card">
-                <h2>Adjust Parameters</h2>
                 <Sidebar
                   llm={llm}
                   setLlm={setLlm}
