@@ -25,7 +25,7 @@ function Dashboard({ llm, dailyQueries, dailyUsers, timePeriod, datacenters }) {
         </div>
         <div className="dashboard-card">
           <h3>Could Power</h3>
-          <p>{homesPowered.toFixed(0)} homes/year</p>
+          <p>{homesPowered.toFixed(1)} homes/year</p>
         </div>
       </div>
     </main>
