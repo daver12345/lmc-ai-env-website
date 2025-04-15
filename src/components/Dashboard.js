@@ -10,13 +10,23 @@ function Dashboard({ llm, dailyQueries, dailyUsers, timePeriod, datacenters }) {
   return (
     <main className="content">
       <h2>📊 Projected Impact</h2>
-      <p><strong>LLM:</strong> {llm || '—'}</p>
-      <p><strong>Total Queries:</strong> {totalQueries.toLocaleString()}</p>
-      <p><strong>Estimated Energy:</strong> {energyUseMWh.toFixed(2)} MWh</p>
-      <p><strong>Could power:</strong> {homesPowered.toFixed(0)} homes/year</p>
-
-      <div className="visual-placeholder">
-        <p>[Data visualizations coming soon]</p>
+      <div className="dashboard-grid">
+        <div className="dashboard-card">
+          <h3>LLM</h3>
+          <p>{llm || '—'}</p>
+        </div>
+        <div className="dashboard-card">
+          <h3>Total Queries</h3>
+          <p>{totalQueries.toLocaleString()}</p>
+        </div>
+        <div className="dashboard-card">
+          <h3>Estimated Energy</h3>
+          <p>{energyUseMWh.toFixed(2)} MWh</p>
+        </div>
+        <div className="dashboard-card">
+          <h3>Could Power</h3>
+          <p>{homesPowered.toFixed(0)} homes/year</p>
+        </div>
       </div>
     </main>
   );

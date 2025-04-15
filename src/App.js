@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
+import Visualization from './components/Visualization';
 import Suggestions from './components/Suggestions';
 import Navbar from './components/Navbar';
 import './App.css';
@@ -51,7 +52,16 @@ function App() {
                 />
               </div>
             )}
-            <div className="card dashboard-card">
+            <div className="card .dashboard-main-card">
+              <Visualization
+                llm={llm}
+                dailyQueries={dailyQueries}
+                dailyUsers={dailyUsers}
+                timePeriod={timePeriod}
+                datacenters={datacenters}
+              />
+            </div>
+            <div className="card .dashboard-main-card">
               <Dashboard
                 llm={llm}
                 dailyQueries={dailyQueries}
