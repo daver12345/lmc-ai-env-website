@@ -22,11 +22,11 @@ function Sidebar({
       </div>
       <div className="field">
         <label>Daily Queries:</label>
-        <input type="number" value={dailyQueries} onChange={(e) => setDailyQueries(e.target.value)} />
+        <input type="number" min="0" value={dailyQueries} onChange={(e) => setDailyQueries(e.target.value)} />
       </div>
       <div className="field">
         <label>Daily Users:</label>
-        <input type="number" value={dailyUsers} onChange={(e) => setDailyUsers(e.target.value)} />
+        <input type="number" min="0" value={dailyUsers} onChange={(e) => setDailyUsers(e.target.value)} />
       </div>
       <div className="field">
         <label>Time Period (Years): {timePeriod}</label>
@@ -34,7 +34,7 @@ function Sidebar({
       </div>
       <div className="field">
         <label>Datacenters:</label>
-        <input type="number" value={datacenters} onChange={(e) => setDatacenters(e.target.value)} />
+        <input type="number" min="0" value={datacenters} onChange={(e) => setDatacenters(e.target.value)} />
       </div>
     </aside>
   );
