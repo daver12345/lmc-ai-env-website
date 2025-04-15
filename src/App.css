@@ -123,14 +123,47 @@ section.interaction {
 /* --- Suggestions Footer --- */
 .suggestions {
   background-color: var(--accent);
-  color: white;
+  color: var(--primary);
   padding: 3rem 1rem;
   text-align: center;
 }
 
-.suggestions h2 {
-  margin-top: 0;
+.suggestions-title {
   font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.suggestion-box {
+  max-width: 700px; 
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.suggestion-text {
+  flex-grow: 1;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.nav-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+
+.nav-arrow:hover {
+  transform: scale(1.1);
 }
 
 .suggestions ul {
