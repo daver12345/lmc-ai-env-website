@@ -2,6 +2,7 @@
 import React from 'react';
 import './Why.css';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Why() {
   return (
@@ -43,6 +44,7 @@ function Why() {
           </p>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
