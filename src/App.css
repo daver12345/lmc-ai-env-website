@@ -262,3 +262,40 @@ section.interaction {
     flex-direction: column;
   }
 }
+
+/* --- Sliding Animation for Suggestion Text --- */
+.suggestion-text {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animate left slide */
+.slide-left {
+  animation: slideLeft 0.3s ease forwards;
+}
+
+/* Animate right slide */
+.slide-right {
+  animation: slideRight 0.3s ease forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
