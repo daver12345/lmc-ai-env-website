@@ -10,10 +10,10 @@ import QuizBanner from './components/QuizBanner';
 import './App.css';
 
 function App() {
-  const [llm, setLlm] = useState('');
-  const [dailyQueries, setDailyQueries] = useState(0);
-  const [dailyUsers, setDailyUsers] = useState(0);
-  const [timePeriod, setTimePeriod] = useState(0);
+  const [llm, setLlm] = useState('gpt-4');
+  const [dailyQueries, setDailyQueries] = useState(5);
+  const [dailyUsers, setDailyUsers] = useState(1000000);
+  const [timePeriod, setTimePeriod] = useState(1);
   const [datacenters, setDatacenters] = useState(0);
   const [showSidebar, setShowSidebar] = useState(true);
 
