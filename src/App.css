@@ -200,7 +200,7 @@ section.interaction {
 .card-toggle {
   text-align: right;
   margin-bottom: 1rem;
-  padding-top: 6rem; /* extra padding to avoid quiz overlap */
+  padding-top: 1rem;
 }
 
 .card-toggle button {
@@ -306,4 +306,17 @@ section.interaction {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.parameters-instructions {
+  background-color: var(--mid-bg);
+  color: var(--dark-bg);
+  border-left: 6px solid var(--accent);
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  max-width: var(--max-width);
+  margin-top: 6rem;
 }

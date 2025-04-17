@@ -33,6 +33,9 @@ function App() {
       {/* Main Interactive + Dashboard Section Side-by-Side */}
       <section id="parameters" className="main-content">
         <div className="main-wrapper">
+        <div className="parameters-instructions">
+    💡      Use the sliders and fields to simulate how different usage patterns affect AI’s environmental impact. Adjust queries, users, datacenters and more!
+        </div>
           <div className="card-toggle">
             <button onClick={() => setShowSidebar(!showSidebar)}>
               {showSidebar ? 'Hide Parameters' : 'Show Parameters'}
