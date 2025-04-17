@@ -6,6 +6,7 @@ import Visualization from './components/Visualization';
 import Suggestions from './components/Suggestions';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import QuizBanner from './components/QuizBanner';
 import './App.css';
 
 function App() {
@@ -19,17 +20,22 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* Hero Section */}
+
+      {/* Hero Section with Background */}
       <section id="hero" className="hero">
         <div className="hero-content">
           <h1>🌿 The Hidden Environmental Cost of AI</h1>
           <p>Explore how AI impacts our planet — and what we can do about it.</p>
         </div>
+        <QuizBanner />
       </section>
 
       {/* Main Interactive + Dashboard Section Side-by-Side */}
       <section id="parameters" className="main-content">
         <div className="main-wrapper">
+        <div className="parameters-instructions">
+    💡      Use the sliders and fields to simulate how different usage patterns affect AI’s environmental impact. Adjust queries, users, datacenters and more!
+        </div>
           <div className="card-toggle">
             <button onClick={() => setShowSidebar(!showSidebar)}>
               {showSidebar ? 'Hide Parameters' : 'Show Parameters'}
@@ -52,7 +58,7 @@ function App() {
                 />
               </div>
             )}
-            <div className="card .dashboard-main-card">
+            <div className="card dashboard-main-card">
               <Visualization
                 llm={llm}
                 dailyQueries={dailyQueries}
@@ -61,7 +67,7 @@ function App() {
                 datacenters={datacenters}
               />
             </div>
-            <div className="card .dashboard-main-card">
+            <div className="card dashboard-main-card">
               <Dashboard
                 llm={llm}
                 dailyQueries={dailyQueries}
