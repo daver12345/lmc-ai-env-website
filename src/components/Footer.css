@@ -1,0 +1,26 @@
+/* File: src/components/Footer.css */
+
+.footer {
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 4rem;
+  }
+  
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 0 0.3rem;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  

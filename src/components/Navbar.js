@@ -1,6 +1,10 @@
 // File: src/components/Navbar.js
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
+
+<Link to="/why">Why This Project</Link>
+
 
 function Navbar() {
   return (
@@ -8,9 +12,8 @@ function Navbar() {
       <div className="nav-container">
         <a href="#hero" className="logo">EcoAI Impact</a>
         <ul className="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#parameters">Parameters</a></li>
-          <li><a href="#suggestions">Suggestions</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/why">Why</Link></li>
         </ul>
       </div>
     </nav>

@@ -5,6 +5,7 @@ import Dashboard from './components/Dashboard';
 import Visualization from './components/Visualization';
 import Suggestions from './components/Suggestions';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -75,6 +76,7 @@ function App() {
 
       {/* Suggestions Section */}
       <Suggestions />
+      <Footer />
     </div>
   );
 }
