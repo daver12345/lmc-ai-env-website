@@ -1,0 +1,79 @@
+/* File: src/pages/SuggestionsPage.css */
+
+.suggestions-page {
+    background-color: var(--light-bg);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+  }
+  
+  /* Hero Section */
+  .suggestions-hero {
+    background: linear-gradient(to bottom, rgba(28, 76, 69, 0.85), rgba(28, 76, 69, 0.85)),
+                url('https://i.imgur.com/BIdnz1q.png') center/cover no-repeat;
+    padding: 6rem 2rem;
+    text-align: center;
+    color: var(--text-light);
+  }
+  
+  .suggestions-hero-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  .suggestions-hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .suggestions-hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Main Content */
+  .suggestions-content {
+    padding: 4rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .suggestion-detail {
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .suggestion-detail h2 {
+    margin-top: 0;
+    color: var(--primary);
+  }
+  
+  .suggestion-detail p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .suggestion-detail ul {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+  }
+  
+  .suggestion-detail li {
+    margin-bottom: 0.6rem;
+  }
+  
+  .suggestion-detail a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .suggestion-detail a:hover {
+    text-decoration: underline;
+    color: var(--primary);
+  }
+  
