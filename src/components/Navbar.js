@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <a href="#hero" className="logo">EcoAI Impact</a>
+        <Link to="/" className="logo">EcoAI Impact</Link>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/why">Why</Link></li>
