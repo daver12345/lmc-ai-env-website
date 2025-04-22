@@ -7,7 +7,7 @@ const IconGrid = ({totalHomes}) => {
 
   const Cell = ({ columnIndex, rowIndex, style }) => {
     const index = rowIndex * columnCount + columnIndex;
-    if (index >= totalHomes) return null;
+    if (index >= Math.round(totalHomes)) return null;
 
     return (
       <div style={style} className="flex items-center justify-center">
