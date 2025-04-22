@@ -16,14 +16,15 @@ function Why() {
         </div>
       </header>
 
-
-
-      <main className="why-content">
       <img
               src="https://focus.namirial.com/en/wp-content/uploads/sites/4/ai-climate-change.jpg"
               alt="Robot watering a plant"
               className="quick-facts-image"
             />
+
+
+      <main className="why-content">
+
         
         <section className="why-section">
         
