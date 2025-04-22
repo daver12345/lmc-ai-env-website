@@ -21,12 +21,12 @@ function Sidebar({
         </select>
       </div>
       <div className="field">
-        <label>Daily Queries:</label>
-        <input type="number" min="1" value={dailyQueries} onChange={(e) => setDailyQueries(e.target.value)} />
+        <label>Daily Queries: {dailyQueries}</label>
+        <input type="range" min="1" max="100" step="1" value={dailyQueries} onChange={(e) => setDailyQueries(e.target.value)} />
       </div>
       <div className="field">
-        <label>Daily Users:</label>
-        <input type="number" min="1" value={dailyUsers} onChange={(e) => setDailyUsers(e.target.value)} />
+        <label>Daily Users: </label>
+        <input type="input" min="1" value={dailyUsers} onChange={(e) => setDailyUsers(e.target.value)} />
       </div>
       <div className="field">
         <label>Time Period (Years): {timePeriod}</label>

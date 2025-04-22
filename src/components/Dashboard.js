@@ -17,7 +17,7 @@ function Dashboard({ llm, dailyQueries, dailyUsers, timePeriod, datacenters }) {
         </div>
         <div className="dashboard-card">
           <h3>Total Queries</h3>
-          <p>{totalQueries.toLocaleString()}</p>
+          <p>{totalQueries}</p>
         </div>
         <div className="dashboard-card">
           <h3>Estimated Energy</h3>
