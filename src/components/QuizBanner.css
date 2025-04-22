@@ -130,11 +130,11 @@ input[type="range"]::-webkit-slider-thumb {
   transform: scale(1.05);
 }
 
-.quick-facts-image {
+.burning-image {
   display: block;
   margin: 0 auto 0 auto;
   margin-top: 1rem;
-  max-width: 450px;
+  max-width: 750px;
   width: 100%;
   height: auto;
   border-radius: 12px;

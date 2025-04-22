@@ -136,8 +136,8 @@ function QuizBanner() {
         <h3>Your AI Usage Profile: <span style={{ color: 'var(--primary)' }}>{result.label}</span></h3>
         <p>{result.description}</p>
         <img
-              src="https://assets.weforum.org/article/image/SA-JjBWAv4neEZkhXoL6P8Cq4_Xtrg5AqxooRdtETj4.jpg"
-              className="quick-facts-image"
+              src="https://cires.colorado.edu/_next/image?url=https%3A%2F%2Fadmin-cires.colorado.edu%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fbanner%2Fpublic%2F2025-02%2FPioneer%2520Fire-Boise%2520National%2520Forest%2520in%25202016-Forest%2520Service-USDA.jpg%3Fh%3D1e947af3%26itok%3DC7-qB9Ph&w=3840&q=80"
+              className="burning-image"
             />
         <button className="next-btn" onClick={() => { setShowIntro(true); setCurrentIndex(0); setAnswers({}); }}>
           Restart Quiz
