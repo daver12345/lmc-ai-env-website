@@ -15,9 +15,10 @@ function Sidebar({
         <label>Language Model:</label>
         <select value={llm} onChange={(e) => setLlm(e.target.value)}>
           <option value="">Choose an LLM</option>
-          <option value="gpt-4">GPT-4</option>
-          <option value="gpt-3">GPT-3</option>
-          <option value="custom">Custom</option>
+          <option value="GPT-4">GPT-4</option>
+          <option value="GPT-3">GPT-3</option>
+          <option value="Claude">Claude</option>
+          <option value="Gemini">Gemini</option>
         </select>
       </div>
       <div className="field">
