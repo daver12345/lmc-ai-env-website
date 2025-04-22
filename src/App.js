@@ -14,7 +14,7 @@ function App() {
   const [dailyQueries, setDailyQueries] = useState(5);
   const [dailyUsers, setDailyUsers] = useState(1000000);
   const [timePeriod, setTimePeriod] = useState(1);
-  const [datacenters, setDatacenters] = useState(0);
+  const [datacenters, setDatacenters] = useState(1);
   const [showSidebar, setShowSidebar] = useState(true);
 
   return (
