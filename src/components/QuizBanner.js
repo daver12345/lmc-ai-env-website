@@ -135,6 +135,10 @@ function QuizBanner() {
       <div className="quiz-box">
         <h3>Your AI Usage Profile: <span style={{ color: 'var(--primary)' }}>{result.label}</span></h3>
         <p>{result.description}</p>
+        <img
+              src="https://assets.weforum.org/article/image/SA-JjBWAv4neEZkhXoL6P8Cq4_Xtrg5AqxooRdtETj4.jpg"
+              className="quick-facts-image"
+            />
         <button className="next-btn" onClick={() => { setShowIntro(true); setCurrentIndex(0); setAnswers({}); }}>
           Restart Quiz
         </button>

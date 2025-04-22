@@ -18,7 +18,6 @@ function Why() {
 
       <img
               src="https://focus.namirial.com/en/wp-content/uploads/sites/4/ai-climate-change.jpg"
-              alt="Robot watering a plant"
               className="quick-facts-image"
             />
 
@@ -58,7 +57,10 @@ function Why() {
             <span>— MIT Technology Review</span>
           </div>
         </section>
-
+        <img
+              src="https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?cs=srgb&dl=pexels-pixabay-247763.jpg&fm=jpg"
+              className="quick-facts-image"
+            />
         <section className="why-section">
         
           <h2>Quick Facts</h2>
@@ -82,7 +84,10 @@ function Why() {
             We believe everyone should understand this tradeoff. Awareness sparks action — and with the right information, people can make smarter, more sustainable tech choices.
           </p>
         </section>
-
+        <img
+              src="https://www.tracebloc.io/blogs/images/greenai_thumb.jpg"
+              className="quick-facts-image"
+            />
         <section className="why-section">
           <h2>Our Goal</h2>
             <p>

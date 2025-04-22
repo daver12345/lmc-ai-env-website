@@ -61,7 +61,10 @@ function SuggestionsPage() {
           </p>
         </section>
       </main>
-
+      <img
+              src="https://media.istockphoto.com/id/598057526/photo/enchanting-sunshine-on-green-treetops.jpg?s=612x612&w=0&k=20&c=Z884hwWZrzJm_WCgOVtpukVx0rYYU0qZuVoKjPN8Gw0="
+              className="quick-facts-image"
+            />
       <Footer />
     </div>
   );

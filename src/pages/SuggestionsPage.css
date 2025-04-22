@@ -76,4 +76,14 @@
     text-decoration: underline;
     color: var(--primary);
   }
-  
+
+  .quick-facts-image {
+    display: block;
+    margin: 0 auto 0 auto;
+    margin-top: 1rem;
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
