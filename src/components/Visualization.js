@@ -1,5 +1,6 @@
 // File: src/components/Vizualization.js
 import React from 'react';
+import IconGrid from './IconGrid';
 
 function Visualization({ llm, dailyQueries, dailyUsers, timePeriod, datacenters }) {
   // Placeholder calculations
@@ -11,9 +12,7 @@ function Visualization({ llm, dailyQueries, dailyUsers, timePeriod, datacenters 
     <main className="content">
       <h2>📊 Visualizations</h2>
 
-      <div className="visual-placeholder">
-        <p>[Data visualizations coming soon]</p>
-      </div>
+      <IconGrid totalHomes={homesPowered}/>
     </main>
   );
 }
