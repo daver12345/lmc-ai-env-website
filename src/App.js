@@ -11,11 +11,36 @@ import './App.css';
 
 function App() {
   const [llm, setLlm] = useState('GPT-4');
+  const [unit, setUnit] = useState('homes');
   const [dailyQueries, setDailyQueries] = useState(5);
   const [dailyUsers, setDailyUsers] = useState(1000000);
   const [timePeriod, setTimePeriod] = useState(1);
   const [datacenters, setDatacenters] = useState(1);
   const [showSidebar, setShowSidebar] = useState(true);
+
+  const totalQueries = dailyQueries * dailyUsers * 365 * timePeriod;
+
+  // Estimated energy per query by model (in Wh)
+  const energyPerQueryMap = {
+    'GPT-4': 2.9,
+    'GPT-3': 1.1,
+    'Claude': 1.5,
+    'Gemini': 2.3,
+    '': 2.9 // fallback default
+  };
+
+  const energyPerQuery = energyPerQueryMap[llm] || 2.9;
+  const energyUseMWh = (totalQueries * energyPerQuery) / 1e6; // Convert to MWh
+
+  // Conversions:
+  // Average U.S. household uses ~10,558 kWh/year (source: EIA). Convert MWh to kWh (*1000) then divide.
+  const homesPowered = (energyUseMWh * 1000) / 10558;
+
+  // Average electric car consumes ~4.6 MWh/year (DOE estimate). Divide total energy by that number.
+  const carsPowered = energyUseMWh / 4.6;
+
+  // Approx. 45,000 MWh/year is a rough benchmark for a small city or district.
+  const cityPowered = energyUseMWh / 45000;
 
   return (
     <div className="App">
@@ -60,20 +85,22 @@ function App() {
             )}
             <div className="card dashboard-main-card">
               <Visualization
-                llm={llm}
-                dailyQueries={dailyQueries}
-                dailyUsers={dailyUsers}
-                timePeriod={timePeriod}
-                datacenters={datacenters}
+                homesPowered={homesPowered}
+                carsPowered={carsPowered}
+                cityPowered={cityPowered}
+                unit={unit}
               />
             </div>
             <div className="card dashboard-main-card">
               <Dashboard
                 llm={llm}
-                dailyQueries={dailyQueries}
-                dailyUsers={dailyUsers}
-                timePeriod={timePeriod}
-                datacenters={datacenters}
+                totalQueries={totalQueries}
+                homesPowered={homesPowered}
+                carsPowered={carsPowered}
+                cityPowered={cityPowered}
+                energyUseMWh={energyUseMWh}
+                unit={unit}
+                setUnit={setUnit}
               />
             </div>
           </div>
