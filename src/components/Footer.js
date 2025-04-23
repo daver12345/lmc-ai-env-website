@@ -9,11 +9,11 @@ function Footer() {
         <p>
           🌍 This project was developed to raise awareness about the hidden environmental costs of artificial intelligence.
           <br />
-          Built with 💚 by a team passionate about sustainable tech.
+          Built by Amanda Candido, David Beugnon, Patrick Birner, and Kieran Marland for LMC 3403. 
         </p>
         <p className="footer-links">
-          <a href="https://www.iea.org/data-and-statistics" target="_blank" rel="noopener noreferrer">Data Sources</a> |
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer"> GitHub Repo</a>
+          <a href="https://docs.google.com/document/d/1rFBZEHwFIuSYrHk9Ao-UD0tKpzGGyZ9lMpHBkWxryrk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Data Sources</a> |
+          <a href="https://github.com/daver12345/lmc-ai-env-website" target="_blank" rel="noopener noreferrer"> GitHub Repo</a>
         </p>
       </div>
     </footer>
