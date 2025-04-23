@@ -28,11 +28,12 @@ function Visualization({homesPowered, carsPowered, cityPowered, unit}) {
   return (
     <main className="content">
       <h2>📊 Visualizations</h2>
-
-      <IconGrid 
-        unitNumber={unitNumber}
-        imgLink={imgLink}
-      />
+      <div className="icon-grid-wrapper">
+        <IconGrid 
+          unitNumber={unitNumber}
+          imgLink={imgLink}
+        />
+      </div>
     </main>
   );
 }

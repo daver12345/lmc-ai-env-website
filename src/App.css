@@ -221,17 +221,32 @@ section.interaction {
 
 .side-by-side {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  justify-content: space-between;
   flex-wrap: nowrap;
 }
 
 .sidebar-card {
-  flex: 1 1 320px;
-  max-width: 400px;
+  flex: 0 0 300px;
+  max-width: 300px;
+  box-sizing: border-box;
 }
 
 .dashboard-main-card {
-  flex: 2 1 600px;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icon-grid-wrapper {
+  width: 100%;
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding-right: 0.5rem;
 }
 
 .content {
