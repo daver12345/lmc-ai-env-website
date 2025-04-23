@@ -12,8 +12,8 @@ import './App.css';
 function App() {
   const [llm, setLlm] = useState('GPT-4');
   const [unit, setUnit] = useState('homes');
-  const [dailyQueries, setDailyQueries] = useState(5);
-  const [dailyUsers, setDailyUsers] = useState(1000000);
+  const [dailyQueries, setDailyQueries] = useState(1);
+  const [dailyUsers, setDailyUsers] = useState(100000);
   const [timePeriod, setTimePeriod] = useState(1);
   const [datacenters, setDatacenters] = useState(1);
   const [showSidebar, setShowSidebar] = useState(true);
