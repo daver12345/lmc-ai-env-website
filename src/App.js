@@ -11,6 +11,7 @@ import './App.css';
 
 function App() {
   const [llm, setLlm] = useState('GPT-4');
+  const [unit, setUnit] = useState('homes');
   const [dailyQueries, setDailyQueries] = useState(5);
   const [dailyUsers, setDailyUsers] = useState(1000000);
   const [timePeriod, setTimePeriod] = useState(1);
@@ -87,6 +88,7 @@ function App() {
                 homesPowered={homesPowered}
                 carsPowered={carsPowered}
                 cityPowered={cityPowered}
+                unit={unit}
               />
             </div>
             <div className="card dashboard-main-card">
@@ -97,6 +99,8 @@ function App() {
                 carsPowered={carsPowered}
                 cityPowered={cityPowered}
                 energyUseMWh={energyUseMWh}
+                unit={unit}
+                setUnit={setUnit}
               />
             </div>
           </div>

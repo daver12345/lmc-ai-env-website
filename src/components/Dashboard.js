@@ -2,10 +2,7 @@
 import React, { useState } from 'react';
 import './Dashboard.css';
 
-function Dashboard({ llm, totalQueries, homesPowered, carsPowered, cityPowered, energyUseMWh }) {
-  const [unit, setUnit] = useState('homes');
-
-
+function Dashboard({ llm, totalQueries, homesPowered, carsPowered, cityPowered, energyUseMWh, unit, setUnit }) {
 
   const getImpactValue = () => {
     switch (unit) {
