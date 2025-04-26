@@ -2,7 +2,7 @@ import React from "react";
 import { FixedSizeGrid as Grid } from "react-window";
 
 const IconGrid = ({unitNumber, imgLink}) => {
-  const columnCount = 10; // Adjust for layout/width
+  const columnCount = 6; // Adjust for layout/width
   const rowCount = Math.ceil(unitNumber / columnCount);
 
   const Cell = ({ columnIndex, rowIndex, style }) => {
