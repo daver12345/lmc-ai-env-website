@@ -13,7 +13,7 @@ function Footer() {
         </p>
         <p className="footer-links">
           <a href="https://www.iea.org/data-and-statistics" target="_blank" rel="noopener noreferrer">Data Sources</a> |
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer"> GitHub Repo</a>
+          <a href="https://github.com/daver12345/lmc-ai-env-website" target="_blank" rel="noopener noreferrer"> GitHub Repo</a>
         </p>
       </div>
     </footer>

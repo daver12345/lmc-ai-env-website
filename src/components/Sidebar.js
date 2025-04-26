@@ -35,7 +35,7 @@ function Sidebar({
       </div>
       <div className="field">
         <label>Datacenters:</label>
-        <input type="number" min="1" value={datacenters} onChange={(e) => setDatacenters(e.target.value)} />
+        <input type="number" min="0" value={datacenters} onChange={(e) => setDatacenters(e.target.value)} />
       </div>
     </aside>
   );

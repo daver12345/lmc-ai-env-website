@@ -15,7 +15,7 @@ function App() {
   const [dailyQueries, setDailyQueries] = useState(5);
   const [dailyUsers, setDailyUsers] = useState(1000000);
   const [timePeriod, setTimePeriod] = useState(1);
-  const [datacenters, setDatacenters] = useState(1);
+  const [datacenters, setDatacenters] = useState(0);
   const [showSidebar, setShowSidebar] = useState(true);
 
   const totalQueries = dailyQueries * dailyUsers * 365 * timePeriod;
@@ -31,16 +31,19 @@ function App() {
 
   const energyPerQuery = energyPerQueryMap[llm] || 2.9;
   const energyUseMWh = (totalQueries * energyPerQuery) / 1e6; // Convert to MWh
+//~11800 datacenters globally, 2022 datacenter consumption globally = ~460TWh = 460,000,000MWh
+  const dataCenterEnergyUseMWh = datacenters * 38983 * timePeriod;
+  const totalEnergyUse = energyUseMWh + dataCenterEnergyUseMWh;
 
   // Conversions:
   // Average U.S. household uses ~10,558 kWh/year (source: EIA). Convert MWh to kWh (*1000) then divide.
-  const homesPowered = (energyUseMWh * 1000) / 10558;
+  const homesPowered = (totalEnergyUse * 1000) / 10558;
 
   // Average electric car consumes ~4.6 MWh/year (DOE estimate). Divide total energy by that number.
-  const carsPowered = energyUseMWh / 4.6;
+  const carsPowered = totalEnergyUse / 4.6;
 
   // Approx. 45,000 MWh/year is a rough benchmark for a small city or district.
-  const cityPowered = energyUseMWh / 45000;
+  const cityPowered = totalEnergyUse / 45000;
 
   return (
     <div className="App">
@@ -98,7 +101,7 @@ function App() {
                 homesPowered={homesPowered}
                 carsPowered={carsPowered}
                 cityPowered={cityPowered}
-                energyUseMWh={energyUseMWh}
+                energyUseMWh={totalEnergyUse}
                 unit={unit}
                 setUnit={setUnit}
               />
